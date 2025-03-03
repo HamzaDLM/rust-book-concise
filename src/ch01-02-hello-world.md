@@ -1,23 +1,6 @@
 ## Hello, World!
 
-Now that you’ve installed Rust, it’s time to write your first Rust program.
-It’s traditional when learning a new language to write a little program that
-prints the text `Hello, world!` to the screen, so we’ll do the same here!
-
-> Note: This book assumes basic familiarity with the command line. Rust makes
-> no specific demands about your editing or tooling or where your code lives, so
-> if you prefer to use an integrated development environment (IDE) instead of
-> the command line, feel free to use your favorite IDE. Many IDEs now have some
-> degree of Rust support; check the IDE’s documentation for details. The Rust
-> team has been focusing on enabling great IDE support via `rust-analyzer`. See
-> [Appendix D][devtools]<!-- ignore --> for more details.
-
 ### Creating a Project Directory
-
-You’ll start by making a directory to store your Rust code. It doesn’t matter
-to Rust where your code lives, but for the exercises and projects in this book,
-we suggest making a _projects_ directory in your home directory and keeping all
-your projects there.
 
 Open a terminal and enter the following commands to make a _projects_ directory
 and a directory for the “Hello, world!” project within the _projects_ directory.
@@ -29,15 +12,6 @@ $ mkdir ~/projects
 $ cd ~/projects
 $ mkdir hello_world
 $ cd hello_world
-```
-
-For Windows CMD, enter this:
-
-```cmd
-> mkdir "%USERPROFILE%\projects"
-> cd /d "%USERPROFILE%\projects"
-> mkdir hello_world
-> cd hello_world
 ```
 
 ### Writing and Running a Rust Program
