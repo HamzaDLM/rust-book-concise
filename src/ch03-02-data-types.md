@@ -34,13 +34,6 @@ these from other programming languages. Let’s jump into how they work in Rust.
 
 #### Integer Types
 
-An _integer_ is a number without a fractional component. We used one integer
-type in Chapter 2, the `u32` type. This type declaration indicates that the
-value it’s associated with should be an unsigned integer (signed integer types
-start with `i` instead of `u`) that takes up 32 bits of space. Table 3-1 shows
-the built-in integer types in Rust. We can use any of these variants to declare
-the type of an integer value.
-
 <span class="caption">Table 3-1: Integer Types in Rust</span>
 
 | Length  | Signed  | Unsigned |
@@ -51,16 +44,6 @@ the type of an integer value.
 | 64-bit  | `i64`   | `u64`    |
 | 128-bit | `i128`  | `u128`   |
 | arch    | `isize` | `usize`  |
-
-Each variant can be either signed or unsigned and has an explicit size.
-_Signed_ and _unsigned_ refer to whether it’s possible for the number to be
-negative—in other words, whether the number needs to have a sign with it
-(signed) or whether it will only ever be positive and can therefore be
-represented without a sign (unsigned). It’s like writing numbers on paper: when
-the sign matters, a number is shown with a plus sign or a minus sign; however,
-when it’s safe to assume the number is positive, it’s shown with no sign.
-Signed numbers are stored using [two’s complement][twos-complement]<!-- ignore
---> representation.
 
 Each signed variant can store numbers from −(2<sup>n − 1</sup>) to 2<sup>n −
 1</sup> − 1 inclusive, where _n_ is the number of bits that variant uses. So an
