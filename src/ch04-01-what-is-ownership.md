@@ -94,12 +94,6 @@ work through the examples that illustrate them:
 
 ### Variable Scope
 
-Now that we’re past basic Rust syntax, we won’t include all the `fn main() {`
-code in examples, so if you’re following along, make sure to put the following
-examples inside a `main` function manually. As a result, our examples will be a
-bit more concise, letting us focus on the actual details rather than
-boilerplate code.
-
 As a first example of ownership, we’ll look at the _scope_ of some variables. A
 scope is the range within a program for which an item is valid. Take the
 following variable:
